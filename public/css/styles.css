@@ -1,36 +1,46 @@
  *{
     margin:0px;
+    padding: 0px;
     box-sizing: border-box;
+    /* border: .5px solid #888  */
  }
 
  header {
     font-family: 'Roboto', sans-serif;
     background-color: #EAC926;
     font-size: 12px;
+    padding-bottom: 15px;
  }
+
+ header nav ul{
+    margin-left: 5px;
+}
 
  .logo {
      width: 150px;
      margin: 10px;
+ }
+ nav{
+     display:none;
+ }
+ .opciones-nav{
+     color: #000;
+     text-decoration: none;
  }
 
  .caja-hamburguesa{
      background-color: #1259c3;
      width: 25px;
      height: 25px;
-     display: inline-block;
-     border-radius: 4px;
-     position: absolute;
-     left: 50%;
+     border-radius: 5px;
+     margin: 0px auto;
  }
 
  .hamburguesa {
     color: #fff;
     text-align: center;
-    position: relative;
-    top: 25%;
-    left: 25%;
-    margin-left: 1px;
+    margin-left: 7px;
+    margin-top: 7px;
  }
 
  header input {
@@ -38,43 +48,141 @@
  }
  header button {
      margin-left: 10px;
+     border-radius: 3px;
+     border: none
  }
  header p {
      display: inline-block;
-     position: absolute;
      margin-left: 50px;
  }
 
  header button:hover{
-     box-shadow: 2px 2px 5px 0 #666;
+     box-shadow: 0px 0px 8px 0 #666;
      cursor: pointer;
  }
+
+ main{
+     margin: 0 auto;
+     text-align: center;
+     width: 90%;
+     padding: 50px;
+     font-family: 'Roboto', sans-serif;
+     font-size: 12px;
+     background-color: #ebebeb;
+ }
+ section article {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-top: 1px solid #ebebeb;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+    display: inline-block;
+ }
+
+ .nombre-producto{
+     font-size: 12px;
+     color: #666;
+     display: none;
+ }
+
+
+
+.precio{
+        font-size: 18px;
+        color:black
+    }
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+    }
+
+    .circulo-camion{
+        border: 1px solid #39b54a;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+
+    .fa-truck{
+        color: #39b54a;
+        margin-top: 6px;
+    }
 
  footer {
      text-align: center;
      font-family: 'Roboto', sans-serif;
      font-size: 12px;
+     padding: 20px 55px 20px 55px;
  }
 
  .icono-footer {
      margin-bottom: 10px;
      color: #1259c3;
+     font-size: 2em;
+ }
+
+ .footer section{
+    text-align: center;
  }
 
  footer section p {
      font-size: 10px;
+     text-align: right;
+ }
+
+ .titulos-footer{
+     margin-right: 25px;
  }
 
  .parrafo-footer {
-     margin-left: 50px;
-     margin-right: 50px;
+    text-align: center;
  }
- 
- .copyright{
-     margin-bottom: 25px;
+ #copyright{
+     margin: 25px;
      text-align: left;
-     margin-left: 25px;
      font-size: 8px;
  }
 
+
+ @media (min-width: 361px) {
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-right:20px;
+        min-width: 180px;
+    }
+    main {
+        padding:25px 17px 25px 17px;
+    }
+
+    .nombre-producto{
+        font-size: 12px;
+        color: #666;
+        display: inline-block;
+    }
+    nav{
+        display:flex;
+    }
+    nav ul {
+        display:flex;
+        width: 100%;
+        border: 1px solid black;
+        justify-content: space-between;
+    }
+    nav ul li {
+        border-right: 1px solid black;
+        padding-right: 5px;
+    }
+    .caja-hamburguesa{
+        display:none;
+    }
+    .hamburguesa{
+        display: none;
+    }
+ }
  
