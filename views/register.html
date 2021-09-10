@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Mercado Liebre</title>
+    <link rel="icon" href="/img/Mercado.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="header-top"><a href="/"><img src="/img/logo-mercado-liebre.svg" alt="Logo" class = "logo" title= "Página principal"></a> <br>
+        <input type="text" placeholder= "Buscar productos, marcas">
+        <button type= "submit"><i class="fas fa-search"></i></button><br>
+        <p> <i class="fas fa-hand-holding-usd"></i></i>  Comprá en cuotas y sin tarjeta de crédito</p> <br><br>
+        </div>
+        <nav>
+            <ul type="none" class="nav-left">
+                <li> <a class= "opciones-nav" href="#">Ofertas</a></li>
+                <li> <a class= "opciones-nav" href="#">Tiendas Oficiales</a></li>
+                <li> <a class= "opciones-nav" href="#">Vender</a></li>
+                <li> <a class= "opciones-nav" href="#">Ayuda</a></li>
+            </ul>
+             <br>
+            <ul type= "none" class="nav-right">
+               <li><a class= "opciones-nav" href="/registro">Creá tu cuenta <i class="far fa-address-card"></i></i></a></li>
+               <li><a class= "opciones-nav" href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+               <li><a class= "opciones-nav" href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class='caja-hamburguesa'><a href="#"><i class="fas fa-bars hamburguesa"></i></a></div>
+    </header>
+
+    <main>
+        <form action="/" method="GET">
+            <label for="nombreCompleto">Nombre y apellido:</label>
+            <input type="text" name="nombreCompleto" placeholder="Nombre y apellido">
+            <input type="text" name="usuario" placeholder="Nombre de usuari@">
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento">
+            <input type="text" name="domicilio" placeholder="Domicilio">
+            <div>
+                <label>Perfil del usuario</label>
+                <label for="comprador"><input type="radio" name="perfil" id="comprador">Comprador</label>
+                <label for="vendedor"><input type="radio" name="perfil" id="vendedor">Vendedor</label>
+            </div>
+            <div>
+                <label>Intereses</label>
+                <label for="electro"><input type="checkbox" name="intereses" value="electro">Electro</label>
+                <label for="moda"><input type="checkbox" name="intereses" value="moda">Moda</label>
+                <label for="hogar"><input type="checkbox" name="intereses" value="hogar">Hogar</label>
+                <label for="jugueteria"><input type="checkbox" name="intereses" value="jugueteria">Juguetería</label>
+                <label for="vida-sana"><input type="checkbox" name="intereses" value="vida-sana">Vida Sana</label>
+            </div>
+            <input type="file" name="foto-usuario" accept=".jpg, .png">
+            <input type="password" name="password" placeholder="Contraseña">
+            <input type="password" name="password-confirm" placeholder="Confirmar contraseña">
+            <button type="submit">Aceptar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </main>
+    </body>
+</html>
