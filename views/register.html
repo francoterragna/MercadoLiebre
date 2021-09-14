@@ -36,32 +36,84 @@ rel="stylesheet" />
     </header>
 
     <main>
-        <form action="/" method="GET">
-            <label for="nombreCompleto">Nombre y apellido:</label>
-            <input type="text" name="nombreCompleto" placeholder="Nombre y apellido">
-            <input type="text" name="usuario" placeholder="Nombre de usuari@">
-            <label>Fecha de nacimiento</label>
-            <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento">
-            <input type="text" name="domicilio" placeholder="Domicilio">
+        <form action="/" method="GET" class="form-register">
+            <label for="nombreCompleto" class="label-register">Nombre y apellido</label><br>
+            <input type="text" name="nombreCompleto" placeholder="Nombre y apellido" class="input-register"><br>
+            <label for="nombreUsuario" class="label-register">Nombre de usuario</label><br>
+            <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" class="input-register"><br>
+            <label class="label-register">Fecha de nacimiento</label><br>
+            <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento" class="input-register"><br>
+            <label for="domicilio" class="label-register">Domicilio</label><br>
+            <input type="text" name="domicilio" placeholder="Domicilio" class="input-register"><br>
             <div>
-                <label>Perfil del usuario</label>
-                <label for="comprador"><input type="radio" name="perfil" id="comprador">Comprador</label>
-                <label for="vendedor"><input type="radio" name="perfil" id="vendedor">Vendedor</label>
+                <label class="label-register">Perfil del usuario</label><br><br>
+                <label for="comprador"><input type="radio" name="perfil" id="comprador" class="radio-perfil">Comprador</label>
+                <label for="vendedor"><input type="radio" name="perfil" id="vendedor" class="radio-perfil">Vendedor</label>
             </div>
-            <div>
-                <label>Intereses</label>
-                <label for="electro"><input type="checkbox" name="intereses" value="electro">Electro</label>
-                <label for="moda"><input type="checkbox" name="intereses" value="moda">Moda</label>
-                <label for="hogar"><input type="checkbox" name="intereses" value="hogar">Hogar</label>
-                <label for="jugueteria"><input type="checkbox" name="intereses" value="jugueteria">Juguetería</label>
-                <label for="vida-sana"><input type="checkbox" name="intereses" value="vida-sana">Vida Sana</label>
+            <div class="intereses-register">
+                <label class="label-register">Intereses:</label><br>
+                <div>
+                    <input type="checkbox" name="intereses" id="electro" class="input-intereses">
+                    <label for="electro" class="label-intereses">Electro</label>
+                    <br>
+                </div><br>
+                <div>
+                    <input type="checkbox" name="intereses" id="moda" class="input-intereses">
+                    <label for="moda" class="label-intereses">Moda</label>
+                    <br>
+                </div><br>
+                <div>
+                    <input type="checkbox" name="intereses" id="hogar" class="input-intereses">
+                    <label for="hogar" class="label-intereses">Hogar</label>
+                    <br>
+                </div><br>
+                <div>
+                    <input type="checkbox" name="intereses" id="jugueteria" class="input-intereses">
+                    <label for="jugueteria" class="label-intereses">Juguetería</label>
+                    <br>
+                </div><br>
+                <div>
+                    <input type="checkbox" name="intereses" id="vida-sana" class="input-intereses">
+                    <label for="vida-sana" class="label-intereses">Vida Sana</label>
+                    <br>
+                </div><br>
+                
             </div>
-            <input type="file" name="foto-usuario" accept=".jpg, .png">
-            <input type="password" name="password" placeholder="Contraseña">
-            <input type="password" name="password-confirm" placeholder="Confirmar contraseña">
-            <button type="submit">Aceptar</button>
-            <button type="reset">Borrar</button>
+            <input type="file" name="foto-usuario" accept=".jpg, .png" class="seleccionar-foto"><br>
+            <label for="password" class="label-register">Contraseña</label><br>
+            <input type="password" name="password" placeholder="Contraseña" class="input-register"><br>
+            <label for="password-confirm" class="label-register">Confirmar contraseña</label><br>
+            <input type="password" name="password-confirm" placeholder="Confirmar contraseña" class="input-register"><br>
+            <button type="submit" class="aceptar-register">Aceptar</button>
+            <button type="reset" class="borrar-register">Borrar</button>
         </form>
     </main>
+    <footer>
+        <section>
+            <ul type= 'none' >
+                <i class="fas fa-credit-card icono-footer"></i>
+                <li><strong class="titulos-footer">Pagá con tarjeta de crédito o en efectivo</strong> </li>
+            </ul>
+            <p class="parrafo-footer">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!</p>
+        </section>
+        <section>
+            <ul type= 'none' >
+                <i class="fas fa-gift icono-footer"></i>
+                <li><strong class="titulos-footer">Envío gratis desde $ 2.500</strong></li>
+            </ul>
+            <p class="parrafo-footer">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+        <section>
+            <ul type= 'none' >
+                <i class="fas fa-user-shield icono-footer"></i>
+                <li><strong class="titulos-footer">Seguridad, de principio a fin</strong></li>
+            </ul>
+            <p class="parrafo-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </section>
+        <p id ='copyright'>Copyright © 1999-2021 MercadoLiebre S.R.L.</p><br><br>
+    </footer>
     </body>
 </html>
