@@ -78,6 +78,10 @@
      cursor: pointer;
  }
 
+ .banner-home{
+     width: 100%;
+ }
+
  .main-home{
      margin: 0 auto;
      text-align: center;
@@ -87,7 +91,7 @@
      font-size: 12px;
      background-color: #ebebeb;
      min-width: 385px;
-     margin-top:183.6px;
+     margin-top:100px;
  }
  section article {
     margin-top: 5px;
@@ -251,9 +255,40 @@
     margin-right: 5px;
 }
 
-
 input:focus{
     outline: none
+}
+
+/* Acá empieza el CSS del login */
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 176px;
+    background-color: #eaeaea;
+    padding: 50px
+}
+
+.input-login{
+    width: 70%;
+    margin: 20px 0 30px 0;
+    padding: 5px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+
+.label-login{
+    font-family: 'Roboto', sans-serif;;
+}
+
+.boton-ingresar{
+    padding:5px;
+    width: 70%;
+    background-color: #1259c3;
+    color: white;
+    border-radius: 5px;
+    border:none
 }
 
  @media (min-width: 611px) {
@@ -301,6 +336,10 @@ input:focus{
         display: none;
     }
  
+    .banner-home{
+        margin-top: 106px;
+    }
+
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         border-radius: 5px;
@@ -311,7 +350,7 @@ input:focus{
     }
     .main-home {
         padding:25px 17px 25px 17px;
-        margin-top: 106.2px;
+        margin-top: 20px;
     }
 
     .descripcion-articulo{
@@ -351,6 +390,25 @@ input:focus{
         width: 80%;
     }
 
+    .form-login{
+        margin-top: 100px;
+        margin-bottom:50px;
+        background-color: #eaeaea;
+        padding: 50px
+    }
+
+    .input-login{
+        max-width: 50%;
+    }
+
+    .label-login{
+        font-family: 'Roboto', sans-serif;;
+    }
+
+    .boton-ingresar{
+        width: 50%;
+    }
+
 }
  
 @media (min-width: 1200px){
@@ -374,6 +432,10 @@ input:focus{
         transition: 500ms;
     }
 
+    .main-home{
+        margin-top: 20px
+    }
+
     footer{
         font-size: 15px;
         flex-direction: row;
@@ -390,8 +452,8 @@ input:focus{
         transform: rotateZ(-90deg);
     }
 
-    section article:hover{ 
-       opacity:100%
+    section article:hover .nombre-producto{ 
+       opacity:100%;
     }
    
     section article:hover{
@@ -404,5 +466,22 @@ input:focus{
 
     .icono-footer{
         transition: all 250ms;
+    }
+
+    .input-login{
+        max-width: 30%;
+    }
+
+    .boton-ingresar{
+        width: 30%;
+    }
+
+    .boton-ingresar:hover{
+        box-shadow: 0 0 10px 0 #888;
+        cursor: pointer;
+    }
+
+    #copyright{
+        font-size: 14px;
     }
 }
