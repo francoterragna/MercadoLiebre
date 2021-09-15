@@ -15,7 +15,7 @@ rel="stylesheet" />
     <header>
         <div class="header-top"><a href="#"><img src="/img/logo-mercado-liebre.svg" alt="Logo" class = "logo" title= "Página principal"></a> <br>
         <input type="text" placeholder= "Buscar productos, marcas">
-        <button type= "submit"><i class="fas fa-search"></i></button><br>
+        <button type= "submit"><i class="fas fa-search"></i></button>
         <p> <i class="fas fa-hand-holding-usd"></i></i>  Comprá en cuotas y sin tarjeta de crédito</p> <br><br>
         </div>
         <nav>
@@ -35,23 +35,23 @@ rel="stylesheet" />
         <div class='caja-hamburguesa'><a href="#"><i class="fas fa-bars hamburguesa"></i></a></div>
     </header>
 
-    <main>
+    <main class="main-home">
     <section>
         <h2 class ="titulo-main">Basado en tu última visita</h2>
         <a href="#">
             <article>
             <img src="/img/img-cafetera-moulinex.jpg" alt="Imagen de la cafetera"> <br>
-            <div class = "circulo-camion"> <i class="fas fa-truck"></i></div>
+            <div class = "circulo-camion"> <i class="fas fa-truck camion-article"></i></div>
             <div class="descripcion-articulo">
             <div class="precio-descuento">
                 <p class ="precio">$6.770</p>
                 <p class ="descuentos">40% off</p></div>
-            <p class="nombre-producto">Cafetera Moulinex</p></div>
+            <h4 class="nombre-producto">Cafetera Moulinex</h4></div>
         </article></a>
         <a href="#">
             <article>
             <img src="/img/img-macbook-pro-2019.jpg" alt="Imagen de MacBook"> <br>
-            <div class = "circulo-camion"> <i class="fas fa-truck"></i></div>
+            <div class = "circulo-camion"> <i class="fas fa-truck camion-article"></i></div>
             <div class="descripcion-articulo">
             <div class="precio-descuento">
             <p class ="precio">$230.000</p> 
@@ -61,7 +61,7 @@ rel="stylesheet" />
         <a href="#">
             <article>
             <img src="/img/img-samsung-galaxy-s10.jpg" alt="Imagen de Samsung Galaxy S10"> <br>
-            <div class = "circulo-camion"> <i class="fas fa-truck"></i></div>
+            <div class = "circulo-camion"> <i class="fas fa-truck camion-article"></i></div>
             <div class="descripcion-articulo">
             <div class="precio-descuento">
             <p class ="precio">$70.500</p>
@@ -71,7 +71,7 @@ rel="stylesheet" />
         <a href="#">
             <article>
             <img src="/img/img-tv-samsung-smart.jpg" alt="imagen del SmartTv"> <br>
-            <div class = "circulo-camion"> <i class="fas fa-truck"></i></div>
+            <div class = "circulo-camion"> <i class="fas fa-truck camion-article"></i></div>
             <div class="descripcion-articulo">
             <div class="precio-descuento">
             <p class ="precio">$23.200</p>
@@ -86,7 +86,7 @@ rel="stylesheet" />
         <h2 class="titulo-main">Sección de ofertas</h2>
         <a href="#"><article>
             <img src="/img/img-cafetera-moulinex.jpg" alt="Imagen de la cafetera" width= 100px> <br>
-            <div class = "circulo-camion"> <i class="fas fa-truck"></i></div>
+            <div class = "circulo-camion"> <i class="fas fa-truck camion-article"></i></div>
             <div class="descripcion-articulo">
             <div class="precio-descuento">
             <p class ="precio">$6.770</p>
@@ -95,7 +95,7 @@ rel="stylesheet" />
         </article></a>
         <a href="#"><article>
             <img src="/img/img-macbook-pro-2019.jpg" alt="Imagen de MacBook" width= 100px> <br>
-            <div class = "circulo-camion"> <i class="fas fa-truck"></i></div>
+            <div class = "circulo-camion"> <i class="fas fa-truck camion-article"></i></div>
             <div class="descripcion-articulo">
             <div class="precio-descuento">
             <p class ="precio">$230.000</p>
@@ -104,7 +104,7 @@ rel="stylesheet" />
         </article></a>
         <a href="#"><article>
             <img src="/img/img-samsung-galaxy-s10.jpg" alt="Imagen de Samsung Galaxy S10" width= 100px> <br>
-            <div class = "circulo-camion"> <i class="fas fa-truck"></i></div>
+            <div class = "circulo-camion"> <i class="fas fa-truck camion-article"></i></div>
             <div class="descripcion-articulo">
             <div class="precio-descuento">
             <p class ="precio">$70.500</p>
@@ -113,7 +113,7 @@ rel="stylesheet" />
         </article></a>
         <a href="#"><article>
             <img src="/img/img-tv-samsung-smart.jpg" alt="imagen del SmartTv" width= 100px> <br>
-            <div class = "circulo-camion"> <i class="fas fa-truck"></i></div>
+            <div class = "circulo-camion"> <i class="fas fa-truck camion-article"></i></div>
             <div class="descripcion-articulo">
             <div class="precio-descuento">
             <p class ="precio">$23.200</p>
@@ -124,6 +124,7 @@ rel="stylesheet" />
     </main> <br><br>
 
     <footer>
+        <div class="footer-section">
         <section>
             <ul type= 'none' >
                 <i class="fas fa-credit-card icono-footer"></i>
@@ -148,6 +149,7 @@ rel="stylesheet" />
             <p class="parrafo-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                 porque estás siempre protegid@.</p>
         </section> <br><br>
+    </div>
         <p id ='copyright'>Copyright © 1999-2021 MercadoLiebre S.R.L.</p><br><br>
     </footer>
 </body>

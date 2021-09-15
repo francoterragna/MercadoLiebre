@@ -11,6 +11,9 @@
     font-size: 12px;
     padding-bottom: 15px;
     min-width: 385px;
+    position:fixed;
+    top:0px;
+    width: 100%;
  }
 
  header nav ul{
@@ -75,7 +78,7 @@
      cursor: pointer;
  }
 
- main{
+ .main-home{
      margin: 0 auto;
      text-align: center;
      width: 90%;
@@ -84,6 +87,7 @@
      font-size: 12px;
      background-color: #ebebeb;
      min-width: 385px;
+     margin-top:183.6px;
  }
  section article {
     margin-top: 5px;
@@ -95,19 +99,21 @@
     background-color: white;
     padding: 15px;
     display: inline-block;
+    
+    
  }
+
+ .nombre-producto{
+    font-size: 12px;
+    color: #666;
+    opacity: 0%;
+}
+
+
 
  img {
      width: 100%;
  }
-
- .nombre-producto{
-     font-size: 12px;
-     color: #666;
-     display: none;
- }
-
-
 
 .precio{
         font-size: 18px;
@@ -138,12 +144,12 @@
     }
 
     
-    .fa-truck{
+    .camion-article{
         color: #39b54a;
         margin-top: 6px;
     }
 
- footer {
+ .footer-section {
      text-align: center;
      font-family: 'Roboto', sans-serif;
      font-size: 12px;
@@ -188,7 +194,7 @@
  
 .form-register{
     width: 100%;
-    margin: 0 auto;
+    margin: 184px auto 0px auto;
     text-align: left;
     padding:15px
 }
@@ -303,8 +309,9 @@ input:focus{
         min-width: 180px;
         width: 35%;
     }
-    main {
+    .main-home {
         padding:25px 17px 25px 17px;
+        margin-top: 106.2px;
     }
 
     .descripcion-articulo{
@@ -319,7 +326,7 @@ input:focus{
         text-align: left;
         display: flex;
     }
-    footer{
+    .footer-section{
         font-size: 16px;
         flex-direction: row;
     }
@@ -329,6 +336,19 @@ input:focus{
     }
     footer section{
         padding: 15px;
+    }
+
+    .main-register{
+        width: 60%;
+        margin: 107px auto
+    }
+
+    .form-register{
+        margin: 106px auto 0px auto;
+    }
+
+    .input-register{
+        width: 80%;
     }
 
 }
@@ -351,6 +371,7 @@ input:focus{
         margin-right:20px;
         min-width: 180px;
         width: 20%;
+        transition: 500ms;
     }
 
     footer{
@@ -363,5 +384,25 @@ input:focus{
     }
     footer section{
         padding: 25px;
+    }
+
+    section article:hover .camion-article{
+        transform: rotateZ(-90deg);
+    }
+
+    section article:hover{ 
+       opacity:100%
+    }
+   
+    section article:hover{
+       box-shadow: 0px 0px 15px 0 black;
+    }
+
+    .icono-footer:hover{
+        color:#EAC926
+    }
+
+    .icono-footer{
+        transition: all 250ms;
     }
 }
