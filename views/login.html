@@ -13,11 +13,14 @@ rel="stylesheet" />
 </head>
 <body>
     <header>
-        <div class="header-top"><a href="/"><img src="/img/logo-mercado-liebre.svg" alt="Logo" class = "logo" title= "Página principal"></a> <br>
-        <input type="text" placeholder= "Buscar productos, marcas">
-        <button type= "submit"><i class="fas fa-search"></i></button><br>
-        <p> <i class="fas fa-hand-holding-usd"></i></i>  Comprá en cuotas y sin tarjeta de crédito</p> <br><br>
+        <div class="header-top">
+            <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="Logo" class = "logo" title= "Página principal"></a> <br>
+            <div class="buscador-y-lupa">
+                <input type="text" placeholder= "Buscar productos, marcas" class="buscador-header">
+                <button type= "submit"><i class="fas fa-search"></i></button><br>
+            </div>
         </div>
+        <p> <i class="fas fa-hand-holding-usd"></i></i>  Comprá en cuotas y sin tarjeta de crédito</p> <br><br>
         <nav>
             <ul type="none" class="nav-left">
                 <li> <a class= "opciones-nav" href="#">Ofertas</a></li>
@@ -36,11 +39,11 @@ rel="stylesheet" />
     </header>
     <main class="main-login">
         <form action="/" method="GET" class="form-login">
-        <label for="usuario" class="label-login">Nombre de usuario</label>
-        <input type="text" placeholder="Nombre de usuario" class="input-login">
-        <label for="password" class="label-login">Contraseña</label>
-        <input type="password" class="input-login" placeholder="Contraseña">
-        <button type="submit" class="boton-ingresar">Ingresar</button>
+            <label for="usuario" class="label-login">Nombre de usuario</label>
+            <input type="text" placeholder="Nombre de usuario" class="input-login">
+            <label for="password" class="label-login">Contraseña</label>
+            <input type="password" class="input-login" placeholder="Contraseña">
+            <button type="submit" class="boton-ingresar">Ingresar</button>
         </form>
     </main>
     <footer>

@@ -13,11 +13,14 @@ rel="stylesheet" />
 </head>
 <body>
     <header>
-        <div class="header-top"><a href="/"><img src="/img/logo-mercado-liebre.svg" alt="Logo" class = "logo" title= "Página principal"></a> <br>
-        <input type="text" placeholder= "Buscar productos, marcas">
-        <button type= "submit"><i class="fas fa-search"></i></button><br>
-        <p> <i class="fas fa-hand-holding-usd"></i></i>  Comprá en cuotas y sin tarjeta de crédito</p> <br><br>
+        <div class="header-top">
+            <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="Logo" class = "logo" title= "Página principal"></a> <br>
+            <div class="buscador-y-lupa">
+                <input type="text" placeholder= "Buscar productos, marcas" class="buscador-header">
+                <button type= "submit"><i class="fas fa-search"></i></button><br>
+            </div>
         </div>
+        <p> <i class="fas fa-hand-holding-usd"></i></i>  Comprá en cuotas y sin tarjeta de crédito</p> <br><br>
         <nav>
             <ul type="none" class="nav-left">
                 <li> <a class= "opciones-nav" href="#">Ofertas</a></li>
@@ -47,11 +50,12 @@ rel="stylesheet" />
             <input type="text" name="domicilio" placeholder="Domicilio" class="input-register"><br>
             <div>
                 <label class="label-register">Perfil del usuario</label><br><br>
-                <label for="comprador"><input type="radio" value="comprador" name="perfil" id="comprador" class="radio-perfil">Comprador</label>
-                <label for="vendedor"><input type="radio"  value="vendedor" name="perfil" id="vendedor" class="radio-perfil">Vendedor</label>
+                <label for="comprador" class="label-perfil"><input type="radio" value="comprador" name="perfil" id="comprador" class="radio-perfil">Comprador</label>
+                <label for="vendedor" class="label-perfil"><input type="radio"  value="vendedor" name="perfil" id="vendedor" class="radio-perfil">Vendedor</label>
             </div>
             <div class="intereses-register">
-                <label class="label-register">Intereses:</label><br>
+                <hr>
+                <label class="label-register">Intereses</label><br>
                 <div>
                     <input value="electro" type="checkbox" name="intereses" id="electro" class="input-intereses">
                     <label for="electro" class="label-intereses">Electro</label>
@@ -75,17 +79,21 @@ rel="stylesheet" />
                 <div>
                     <input value="vida-sana" type="checkbox" name="intereses" id="vida-sana" class="input-intereses">
                     <label for="vida-sana" class="label-intereses">Vida Sana</label>
-                    <br>
+                    <br><br>
+                    <hr>
                 </div><br>
                 
             </div>
-            <input type="file" name="foto-usuario" accept=".jpg, .png" class="seleccionar-foto"><br>
+            <label for="foto-usuario" class="label-seleccionar-foto">Seleccione su foto de perfil</label><br><br>
+            <input type="file" name="foto-usuario" accept=".jpg, .png" class="seleccionar-foto"><br><br>
             <label for="password" class="label-register">Contraseña</label><br>
             <input type="password" name="password" placeholder="Contraseña" class="input-register"><br>
             <label for="password-confirm" class="label-register">Confirmar contraseña</label><br>
             <input type="password" name="password-confirm" placeholder="Confirmar contraseña" class="input-register"><br>
-            <button type="submit" class="aceptar-register">Aceptar</button>
-            <button type="reset" class="borrar-register">Borrar</button>
+            <div class="aceptar-borrar">
+                <button type="submit" class="aceptar-register">Aceptar</button>
+                <button type="reset" class="borrar-register">Borrar</button>
+            </div>
         </form>
     </main>
     <footer>
