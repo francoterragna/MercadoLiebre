@@ -11,8 +11,8 @@
     font-size: 12px;
     padding-bottom: 15px;
     min-width: 385px;
-    position:fixed;
-    top:0px;
+    position:sticky;
+    top:-65px;
     width: 100%;
     z-index: 100;
  }
@@ -110,7 +110,7 @@
      font-size: 12px;
      background-color: #ebebeb;
      min-width: 385px;
-     margin-top:19px;
+     margin-top:-95px;
  }
  section article {
     margin-top: 5px;
@@ -342,6 +342,11 @@ input:focus{
         justify-content: center;
     }
 
+    header {
+        position: sticky;
+        top: -95px
+     }
+
     header nav{
         display:flex;
         justify-content: space-between;
@@ -384,7 +389,7 @@ input:focus{
     }
  
     .banner-home{
-        margin-top: 134px;
+        margin-top: 0px;
         opacity: 1;
     }
 
@@ -464,6 +469,10 @@ input:focus{
     .header-top, header nav {
         max-width: 1200px;
         margin: auto;
+    }
+
+    header{
+        top:0;
     }
 
     nav ul{
