@@ -41,13 +41,13 @@ rel="stylesheet" />
     <main class="main-register">
         <form action="/" method="GET" class="form-register">
             <label for="nombreCompleto" class="label-register">Nombre y apellido</label><br>
-            <input type="text" name="nombreCompleto" placeholder="Nombre y apellido" class="input-register"><br>
+            <input type="text" name="nombreCompleto" placeholder="Nombre y apellido" class="input-register" required><br>
             <label for="nombreUsuario" class="label-register">Nombre de usuario</label><br>
-            <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" class="input-register"><br>
+            <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" class="input-register" required><br>
             <label class="label-register">Fecha de nacimiento</label><br>
-            <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento" class="input-register"><br>
+            <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento" class="input-register" required><br>
             <label for="domicilio" class="label-register">Domicilio</label><br>
-            <input type="text" name="domicilio" placeholder="Domicilio" class="input-register"><br>
+            <input type="text" name="domicilio" placeholder="Domicilio" class="input-register" required><br>
             <div>
                 <label class="label-register">Perfil del usuario</label><br><br>
                 <label for="comprador" class="label-perfil"><input type="radio" value="comprador" name="perfil" id="comprador" class="radio-perfil">Comprador</label>
@@ -87,9 +87,9 @@ rel="stylesheet" />
             <label for="foto-usuario" class="label-seleccionar-foto">Seleccione su foto de perfil</label><br><br>
             <input type="file" name="foto-usuario" accept=".jpg, .png" class="seleccionar-foto"><br><br>
             <label for="password" class="label-register">Contraseña</label><br>
-            <input type="password" name="password" placeholder="Contraseña" class="input-register"><br>
+            <input type="password" name="password" placeholder="Contraseña" class="input-register" required><br>
             <label for="password-confirm" class="label-register">Confirmar contraseña</label><br>
-            <input type="password" name="password-confirm" placeholder="Confirmar contraseña" class="input-register"><br>
+            <input type="password" name="password-confirm" placeholder="Confirmar contraseña" class="input-register" required><br>
             <div class="aceptar-borrar">
                 <button type="submit" class="aceptar-register">Aceptar</button>
                 <button type="reset" class="borrar-register">Borrar</button>
