@@ -98,6 +98,7 @@
 
  .banner-home{
      width: 100%;
+     opacity: 0%;
  }
 
  .main-home{
@@ -109,7 +110,7 @@
      font-size: 12px;
      background-color: #ebebeb;
      min-width: 385px;
-     margin-top:40px;
+     margin-top:22px;
  }
  section article {
     margin-top: 5px;
@@ -384,6 +385,7 @@ input:focus{
  
     .banner-home{
         margin-top: 134px;
+        opacity: 1;
     }
 
     article{
@@ -463,8 +465,6 @@ input:focus{
         max-width: 1200px;
         margin: auto;
     }
-
-    .banner-home
 
     nav ul{
         font-size: 15px;
